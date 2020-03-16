@@ -1,0 +1,63 @@
+body{
+	 
+  background-color: rgba(43, 76, 48);
+}
+.row{
+	background: #ffe501;
+	width: 63%;
+	margin:2% auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.col{
+	flex-basis: 25%;
+	text-align: center;
+	overflow: hidden;
+}
+.col img{
+	width: 100%;
+	cursor: pointer;
+	transition: .5s;
+
+}
+.col p{
+	margin: 20px 0;
+}
+.social .fa{
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #000;
+	margin: 0 7px;
+	cursor: pointer;
+	transition: transform .5s;
+}
+.social .fa:hover{
+	background:#000;
+	color: #ffe501;
+	transform: translateY(-7px);
+}
+.col:hover img{
+	transform: scale(1.1);
+}
+@media(max-width: 770px){
+
+	.row{
+		width: 95%;
+
+	}
+	.col{
+		flex-basis: 50%;
+		font-size: 14px;
+	}
+
+	.social .fa{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	
+}
+
+
+}
